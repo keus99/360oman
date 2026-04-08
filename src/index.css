@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-navy font-sans;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-teal-500 hover:bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply bg-gold-500 hover:bg-gold-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+  .btn-outline {
+    @apply border-2 border-teal-500 text-teal-500 hover:bg-teal-500 hover:text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-200;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200;
+  }
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+}
+
+/* Prose styles for markdown content */
+.prose h1 { @apply text-2xl font-bold text-navy mt-6 mb-3; }
+.prose h2 { @apply text-xl font-semibold text-navy mt-5 mb-2; }
+.prose h3 { @apply text-lg font-semibold text-navy mt-4 mb-2; }
+.prose p { @apply text-gray-700 mb-4 leading-relaxed; }
+.prose ul { @apply list-disc pl-6 mb-4 space-y-1; }
+.prose ol { @apply list-decimal pl-6 mb-4 space-y-1; }
+.prose li { @apply text-gray-700; }
+.prose a { @apply text-teal-500 hover:text-teal-600 underline; }
+.prose strong { @apply font-semibold text-navy; }
+.prose blockquote { @apply border-l-4 border-teal-500 pl-4 italic text-gray-600 my-4; }
+.prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono; }
